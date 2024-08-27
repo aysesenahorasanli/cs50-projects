@@ -1,0 +1,209 @@
+*{
+    font-family: 'arial',sans-serif;
+}
+body {
+    overflow-y: hidden;
+}
+.navbar{
+ list-style-type:none ;
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end
+}
+
+.navbar-item{
+    margin: 10px
+}
+
+.navbar li a {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    color: black;
+}
+
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: black;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.1s ease;
+}
+
+.navbar li a:hover::after {
+    transform: scaleX(1);
+}
+.centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+.centerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBox{
+    display: flex;
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius:30px
+}
+
+.searchBox .icons{
+    position: absolute;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 20px;
+    align-items: center;
+    pointer-events: none;
+}
+.searchBox .icons i {
+    padding-left: 20px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.searchBox  .btn-search{
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    outline:  none;
+    font-size: 16px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius:30px
+} 
+.btn-google{
+   background-color: #f8f9fa;
+   border: 1px solid #f8f9fa;
+   color: #3c403c;
+   font-family: Roboto,arial,sams-serif;
+   border-radius: 4px;
+   font-size:14px;
+   margin: 15px 5px;
+   padding: 0 16px;
+   line-height: 27px;
+   height: 36px;
+   min-width: 100px;
+   cursor: pointer;
+   user-select: none;  
+}
+.btn-google:hover {
+    border-color: gray;
+}
+.h1Advanced{
+    color: red;
+    font-size:20px;
+    margin: 25px 5px;
+}
+hr{
+    color: gray;
+}
+.h2Advanced{
+   font-size: 16px;
+}
+
+.container{
+    width: 90%;
+    height: 60%;
+    background-color: #f3f3f3;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.container .col-3{
+    float: left;
+    width: 15%;
+    margin-top: 10px;
+    
+}
+.container .col-9{
+    float: left;
+    width: 75%;
+    margin-top: 10px;
+}
+
+.container input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.container label{
+    display: inline-block;
+    padding: 10px 10px 10px 0;
+   
+}
+
+.container .btnSubmit{
+   background-color: #4885ed;
+   color: white;
+   margin-top: 50px;
+   padding: 15px 50px;
+   border: none;
+   border-radius: 3px;
+   cursor: pointer;
+   float: right;
+}
+
+.container .btnSubmit:hover{
+   background-color: #45a049;
+}
+
+.container .row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.faq-section {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h2 {
+    font-size: 20px;
+    color: #4885ed;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
