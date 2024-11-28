@@ -2,7 +2,7 @@
 
 <hr>
 # 🔍 Google  Website Design 
-<img src="search/google.png" align="right" width="600" height="300">
+<img src="search/google.png" align="right" width="400" height="200">
 • Responsive Google Website Design
 <br>
 • Made using HTML and CSS
