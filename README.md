@@ -8,7 +8,7 @@
 • Made using HTML and CSS
 <br>
 • There is a  Google Search, Google Image Search, and Google Advanced Search. 
-
-
+<br>
+<br>
 
 <hr>
